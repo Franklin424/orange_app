@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:orange_app/marketplace_screen.dart';
+import 'package:orange_app/orange_money_screen.dart';
 
 void main() {
   runApp(OrangeMaxItApp());
@@ -34,9 +36,9 @@ class _MainNavigationScreenState extends State<MainNavigationScreen> {
 
   final List<Widget> _screens = [
     HomeScreen(),
-    OrangeMoneyScreen(),
+    OrangeMoneyCompleteScreen(),
     MaLigneScreen(),
-    MarketplaceScreen(),
+    MarketplaceCompleteScreen(),
   ];
 
   @override
@@ -363,16 +365,16 @@ class HomeScreen extends StatelessWidget {
 }
 
 // ORANGE MONEY SCREEN (simplified)
-class OrangeMoneyScreen extends StatelessWidget {
-  const OrangeMoneyScreen({super.key});
+// class OrangeMoneyScreen extends StatelessWidget {
+//   const OrangeMoneyScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text('Orange Money Screen', style: TextStyle(fontSize: 24)),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Center(
+//       child: Text('Orange Money Screen', style: TextStyle(fontSize: 24)),
+//     );
+//   }
+// }
 
 // MA LIGNE SCREEN (simplified)
 class MaLigneScreen extends StatelessWidget {
@@ -387,13 +389,13 @@ class MaLigneScreen extends StatelessWidget {
 }
 
 // MARKETPLACE SCREEN (simplified)
-class MarketplaceScreen extends StatelessWidget {
-  const MarketplaceScreen({super.key});
+// class MarketplaceScreen extends StatelessWidget {
+//   const MarketplaceScreen({super.key});
 
-  @override
-  Widget build(BuildContext context) {
-    return Center(
-      child: Text('Marketplace Screen', style: TextStyle(fontSize: 24)),
-    );
-  }
-}
+//   @override
+//   Widget build(BuildContext context) {
+//     return Center(
+//       child: Text('Marketplace Screen', style: TextStyle(fontSize: 24)),
+//     );
+//   }
+// }
